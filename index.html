@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Table</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="cont">
+    <input type="text" id="searchInput" placeholder="Search By Name Or Symbol"
+      onkeydown="if (event.keyCode === 13) document.getElementById('searchInput').blur();">
+
+    <button id="sortPercentageChangeButton">Sort by Percentage Change</button>
+    <button id="sortMarketCapButton">Sort by Market Cap</button>
+
+    <table id="cryptoTable">
+      <tbody id="tableBody">
+        <!-- Table rows will be dynamically added here -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
